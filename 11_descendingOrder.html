@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // 정수를 전달 받으면 내림 차순으로 배치하기
+  const solution = (n) => {
+    return Number(
+      String(n)
+        .split("")
+        .sort((a, b) => +b - +a)
+        .join("")
+    );
+  };
+
+  console.log(solution(118372));
+</script>
