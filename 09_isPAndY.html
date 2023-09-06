@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  //y와 p 갯수를 비교
+  const solution = (str) => {
+    const lowCase = str.toLowerCase().split("");
+    return (
+      lowCase.filter((x) => x === "p").length ===
+      lowCase.filter((x) => x === "y").length
+    );
+  };
+
+  console.log(solution("pPoooyY"));
+</script>

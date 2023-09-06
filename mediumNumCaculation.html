@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  //저달받은 리스트의 평균값을 계산 하는 로직
+  const solution = (arr) => {
+    return arr.reduce((r, c) => r + c, 0) / arr.length;
+  };
+
+  console.log(solution([5, 5]));
+</script>
